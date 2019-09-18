@@ -8,4 +8,6 @@
     <string name="name_hint">Please enter your name</string>
     <string name="name_label">Your name:</string>
     <string name="settings_title">My Settings</string>
+    <string name="saved_message">Personal information saved</string>
+    <string name="revert_message">Personal information reverted</string>
 </resources>
