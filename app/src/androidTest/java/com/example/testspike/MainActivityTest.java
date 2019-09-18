@@ -16,6 +16,7 @@ import static android.support.test.espresso.action.ViewActions.scrollTo;
 import static android.support.test.espresso.action.ViewActions.typeText;
 import static android.support.test.espresso.assertion.ViewAssertions.matches;
 import static android.support.test.espresso.matcher.RootMatchers.withDecorView;
+import static android.support.test.espresso.matcher.ViewMatchers.hasErrorText;
 import static android.support.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
 import static android.support.test.espresso.matcher.ViewMatchers.withText;
@@ -70,7 +71,16 @@ public class MainActivityTest {
         isToastDisplayed(R.string.revert_message);
 
         onView(withId(R.id.emailInput)).check(matches(withText("name1@gmail.com")));
+    }
 
+    @Test
+    public void onSaveClick_shouldDisplayMessageOfInvalidEmail_whenGivenEmailIsInvalid() throws InterruptedException {
+        onView(withId(R.id.userNameInput)).perform(clearText(), typeText("preeti"));
+        onView(withId(R.id.dateOfBirthInput)).perform(PickerActions.setDate(2019, 11, 23));
+        onView(withId(R.id.emailInput)).perform(scrollTo(), click(), clearText(), typeText("@gmail.com"));
+        onView(withId(R.id.saveButton)).perform(scrollTo(), click());
+
+        onView(withId(R.id.emailInput)).check(matches(hasErrorText("Invalid email")));
     }
 
     private void isToastDisplayed(int toast_message) {
