@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Test Spike</string>
+    <string name="revert">revert</string>
+    <string name="save">save</string>
+    <string name="email_hint">email hint</string>
+    <string name="email_label">Your email address:</string>
+    <string name="dob_label">Your date of birth:</string>
+    <string name="name_hint">Please enter your name</string>
+    <string name="name_label">Your name:</string>
+    <string name="settings_title">My Settings</string>
+</resources>

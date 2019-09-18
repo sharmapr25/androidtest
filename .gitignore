@@ -11,5 +11,5 @@
 /build
 /captures
 .externalNativeBuild
-res
+generatedJava
 .idea/
