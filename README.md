@@ -18,7 +18,8 @@ before start: there is an assumption of little bit familiarity with android and 
 ```
 
 ### Directory structure
-![Directory structure](https://github.com/piolAtif/androidtest/blob/master/Screen%20Shot%202019-09-19%20at%203.23.59%20PM.png)
+![Directory structure](https://github.com/piolAtif/androidtest/blob/master/Screen%20Shot%202019-09-19%20at%209.18.41%20AM.png, https://github.com/piolAtif/androidtest/blob/master/Screen%20Shot%202019-09-19%20at%209.18.57%20AM.png)
+
 In **main** directory there are four files:
 * EmailValidator.java -> To Validate given email
 * MainActivity.java -> Main activity that will allow input to save or not
