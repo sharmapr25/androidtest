@@ -18,7 +18,8 @@ before start: there is an assumption of little bit familiarity with android and 
 ```
 
 ### Directory structure
-![Directory structure](https://github.com/piolAtif/androidtest/blob/master/Screen%20Shot%202019-09-19%20at%209.18.41%20AM.png, https://github.com/piolAtif/androidtest/blob/master/Screen%20Shot%202019-09-19%20at%209.18.57%20AM.png)
+![Androidtest](https://github.com/piolAtif/androidtest/blob/master/Screen%20Shot%202019-09-19%20at%209.18.41%20AM.png)
+![test](https://github.com/piolAtif/androidtest/blob/master/Screen%20Shot%202019-09-19%20at%209.18.57%20AM.png)
 
 In **main** directory there are four files:
 * EmailValidator.java -> To Validate given email
@@ -33,7 +34,7 @@ Here it has two test directories:
 If you notice this directory has separated tests into two places. It is recommended to write logic and ui tests separately
 ```
 **Levels of the Testing Pyramid**
-[pyramid image]
+![levels in android testing](https://github.com/piolAtif/androidtest/blob/master/Screen%20Shot%202019-09-19%20at%203.23.59%20PM.png)
 * Small tests are unit tests that validate your app's behavior one class at a time.
 * Medium tests are integration tests that validate either interactions between levels of the stack within a module, or interactions between related modules.
 * Large tests are end-to-end tests that validate user journeys spanning multiple modules of your app.
